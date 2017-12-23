@@ -29,7 +29,7 @@ def main(_):
 
     tf.reset_default_graph()
 
-    with tf.device('/job:local/task:0/device:CPU:0'): #Parameter sever Adress
+    with tf.device('/job:local/task:0/device:CPU:0'): #Parameter server adress
         RANDOM_SEED = 1234
         np.random.seed(RANDOM_SEED)
         tf.set_random_seed(RANDOM_SEED)
